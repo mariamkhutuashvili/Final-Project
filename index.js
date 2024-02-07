@@ -1,3 +1,4 @@
+//scroll to top button
 document.addEventListener("scroll", function () {
   let yPos = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -15,6 +16,7 @@ function ScrollTop() {
   });
 }
 
+// navigation menu
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navUl = document.querySelector("nav ul");
@@ -56,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+//header banner slider
 const images = document.querySelectorAll(".banner-slider img");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
@@ -106,6 +109,7 @@ btnNext.addEventListener("click", () => {
   handleUserInteraction(nextIndex);
 });
 
+// explore more box
 let header = document.querySelector("header");
 let exploreMore = header.querySelector(".btn-blue");
 let exploreContent = document.querySelector(".explore-content");
@@ -136,40 +140,42 @@ Whether you're planning for retirement, saving for a home, or simply looking to 
 Our team of experts is committed to understanding your unique financial situation and working with you to develop personalized strategies for success.`;
 exploreContent.prepend(newDiv);
 
-let storyBtn = document.getElementById("storyBtn");
-let missionBtn = document.getElementById("missionBtn");
-let vissionBtn = document.getElementById("vissionBtn");
+// about us tabs
+let storyTab = document.getElementById("storyTab");
+let missionTab = document.getElementById("missionTab");
+let vissionTab = document.getElementById("vissionTab");
 let storyContent = document.getElementById("storyContent");
 let missionContent = document.getElementById("missionContent");
 let vissionContent = document.getElementById("vissionContent");
 
-storyBtn.addEventListener("click", function () {
+storyTab.addEventListener("click", function () {
   storyContent.style.display = "block";
   missionContent.style.display = "none";
   vissionContent.style.display = "none";
   this.classList.add("activeBtn");
-  missionBtn.classList.remove("activeBtn");
-  vissionBtn.classList.remove("activeBtn");
+  missionTab.classList.remove("activeBtn");
+  vissionTab.classList.remove("activeBtn");
 });
 
-missionBtn.addEventListener("click", function () {
+missionTab.addEventListener("click", function () {
   missionContent.style.display = "block";
   storyContent.style.display = "none";
   vissionContent.style.display = "none";
   this.classList.add("activeBtn");
-  storyBtn.classList.remove("activeBtn");
-  vissionBtn.classList.remove("activeBtn");
+  storyTab.classList.remove("activeBtn");
+  vissionTab.classList.remove("activeBtn");
 });
 
-vissionBtn.addEventListener("click", function () {
+vissionTab.addEventListener("click", function () {
   vissionContent.style.display = "block";
   storyContent.style.display = "none";
   missionContent.style.display = "none";
   this.classList.add("activeBtn");
-  storyBtn.classList.remove("activeBtn");
-  missionBtn.classList.remove("activeBtn");
+  storyTab.classList.remove("activeBtn");
+  missionTab.classList.remove("activeBtn");
 });
 
+//contact form
 let form = document.getElementById("contactForm");
 let phoneInput = document.getElementById("phone");
 let phoneError = document.getElementById("phoneError");

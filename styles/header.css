@@ -58,23 +58,19 @@ nav {
   padding: 0 72px;
 }
 
-nav ul {
+.nav-menu {
   list-style: none;
   display: flex;
   gap: 15px;
 }
 
-nav ul li a {
+.nav-menu a {
   text-decoration: none;
   color: #355efc;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
   padding: 5px 10px;
-}
-
-nav ul li a:hover {
-  border-bottom: 2px solid #355efc;
 }
 
 .submenu-toggle {
@@ -86,6 +82,7 @@ nav ul li a:hover {
 }
 
 .submenu {
+  list-style: none;
   display: none;
   flex-direction: column;
   position: absolute;
@@ -94,7 +91,7 @@ nav ul li a:hover {
   z-index: 1;
   background: linear-gradient(
     rgba(255, 255, 255, 0.2),
-    rgb(222, 226, 251, 0.9)
+    rgba(222, 226, 251, 0.9)
   );
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -119,38 +116,35 @@ nav ul li a:hover {
   line-height: 25px;
 }
 
+.nav-menu li a::after,
 .submenu li a::after {
   content: "";
   height: 2px;
   width: 0%;
-  background: linear-gradient(rgb(137, 139, 153), rgb(199, 203, 231));
+  background: linear-gradient(rgba(53, 94, 252, 0.9), rgba(0, 0, 0, 0.3));
   display: block;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .submenu li:not(:last-child) a {
-  border-bottom: 1px solid rgb(199, 203, 231);
   width: 100%;
   text-align: left;
 }
 
+.nav-menu a:hover,
 .submenu li a:hover {
   border-top: 0;
   border-radius: 0;
   opacity: 1;
 }
 
+.nav-menu li a:hover::after,
 .submenu li a:hover::after {
   content: "";
   height: 2px;
   width: 45%;
-  background: linear-gradient(rgb(137, 139, 153), rgb(199, 203, 231));
+  background: linear-gradient(rgba(53, 94, 252, 0.9), rgba(0, 0, 0, 0.3));
   display: block;
-}
-
-.submenu li:last-child:hover a {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .social-media {
@@ -190,7 +184,7 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the modal */
-  background: rgba(53, 94, 252, 0.8);
+  background: linear-gradient(rgba(53, 94, 252, 0.9), rgba(0, 0, 0, 0.3));
   max-width: 600px; /* Set a max-width for larger screens */
   width: 90%; /* Responsive width */
   padding: 40px; /* Ample padding */
@@ -312,6 +306,7 @@ nav ul li a:hover {
   width: 50px;
   height: 50px;
   right: 20px;
+  bottom: -50px;
   position: fixed;
   text-align: center;
   border-radius: 10px;

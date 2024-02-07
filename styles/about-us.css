@@ -47,16 +47,16 @@
   gap: 19px;
 }
 
-.about-tabs {
+.about-content {
   margin-top: 55px;
   margin-right: 10px;
 }
 
-.about-tabs > div:first-child {
+.about-content > div:first-child {
   display: flex;
 }
 
-.about-tabs button {
+.about-content button {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -70,33 +70,33 @@
   border-bottom: 1px solid #dee2e6;
 }
 
-.about-tabs button:hover:not(:last-child) {
+.about-content button:hover:not(:last-child) {
   border-radius: 5px 5px 0px 0px;
   border: 1px solid #dee2e6;
   border-bottom: none;
 }
 
-.about-tabs button:last-child {
+.about-content button:last-child {
   max-width: 70px;
   cursor: default;
 }
 
-.about-tabs .activeBtn {
+.about-content .activeBtn {
   border-radius: 5px 5px 0px 0px;
   border: 1px solid #dee2e6;
   border-bottom: none;
 }
 
-.about-tabs p:first-child {
+.about-content p:first-child {
   margin-top: 15px;
 }
 
-.about-tabs p {
+.about-content p {
   max-width: 470px;
   padding-left: 5px;
 }
 
-.aboutFeature {
+.aboutFeatures {
   display: flex;
 
   justify-content: center;
@@ -111,23 +111,23 @@
   gap: 20px;
 }
 
-.aboutFeature > div:not(:last-child) {
+.aboutFeatures > div:not(:last-child) {
   border-right: 1px solid #909de2;
   padding-right: 29px;
 }
 
-.aboutFeature > div {
+.aboutFeatures > div {
   display: flex;
   gap: 13px;
 }
 
-.aboutFeature div div {
+.aboutFeatures div div {
   display: flex;
   flex-direction: column;
   gap: 17px;
 }
 
-.aboutFeature i {
+.aboutFeatures i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,13 +140,13 @@
   flex-shrink: 0;
 }
 
-.aboutFeature h6 {
+.aboutFeatures h6 {
   font-size: 24px;
   font-weight: 500;
   text-align: left;
 }
 
-.aboutFeature p {
+.aboutFeatures p {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;

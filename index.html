@@ -21,7 +21,7 @@
     <div class="wrapper">
       <header>
         <div id="header-background">
-          <img src="/assets/bannerBackground.png" />
+          <img src="/assets/bannerBackground.png" alt="Banner Background" />
         </div>
         <div id="top-bar">
           <div class="top-bar-section">
@@ -52,7 +52,7 @@
             <div class="bar"></div>
           </div>
           <a class="logo" href=""><img src="/assets/logo.png" alt="logo" /></a>
-          <ul class="menu">
+          <ul class="nav-menu">
             <li><a href="">Home</a></li>
             <li><a href="#about-us">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -90,10 +90,10 @@
           </div>
           <div class="modal-overlay"></div>
           <div class="banner-slider">
-            <img src="/assets/slider-image-1.png" />
-            <img src="/assets/slider-image-2.png" />
-            <img src="/assets/slider-image-3.png" />
-            <img src="/assets/slider-image-4.png" />
+            <img src="/assets/slider-image-1.png" alt="first slider" />
+            <img src="/assets/slider-image-2.png" alt="second slider" />
+            <img src="/assets/slider-image-3.png" alt="third slider" />
+            <img src="/assets/slider-image-4.png" alt="forth slider" />
           </div>
           <button class="slider-btn btn-prev">
             <i class="fa-solid fa-chevron-left fa-3x"></i>
@@ -122,11 +122,11 @@
                 Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
                 sed stet lorem sit clita duo justo magna dolore erat amet
               </p>
-              <div id="about-tabs" class="about-tabs">
-                <div>
-                  <button id="storyBtn" class="activeBtn">Story</button>
-                  <button id="missionBtn">Mission</button>
-                  <button id="vissionBtn">Vission</button>
+              <div class="about-content">
+                <div class="about-tabs">
+                  <button id="storyTab" class="activeBtn">Story</button>
+                  <button id="missionTab">Mission</button>
+                  <button id="vissionTab">Vission</button>
                   <button></button>
                 </div>
                 <div id="storyContent">
@@ -157,22 +157,22 @@
               </div>
             </div>
           </div>
-          <div class="aboutFeature">
-            <div>
+          <div class="aboutFeatures">
+            <div class="aboutFeature">
               <i class="fa-solid fa-x"></i>
               <div>
                 <h6>No Hidden Cost</h6>
                 <p>Clita erat ipsum lorem sit sed stet duo justo</p>
               </div>
             </div>
-            <div>
+            <div class="aboutFeature">
               <i class="fa-solid fa-user-group"></i>
               <div>
                 <h6>Dedicated Team</h6>
                 <p>Clita erat ipsum lorem sit sed stet duo justo</p>
               </div>
             </div>
-            <div>
+            <div class="aboutFeature">
               <i class="fa-solid fa-phone"></i>
               <div>
                 <h6>24/7 Available</h6>
@@ -184,28 +184,28 @@
         <section id="choose-us" class="choose-us">
           <div>
             <div class="statistics">
-              <div>
+              <div class="clients">
                 <i class="fa-solid fa-users fa-3x"></i>
                 <h3>1234</h3>
                 <p>Happy Clients</p>
                 <div class="line"></div>
               </div>
-              <div>
+              <div class="projects">
                 <i class="fa-solid fa-check fa-3x"></i>
                 <h3>1234</h3>
                 <p>Projects Completed</p>
                 <div class="line"></div>
               </div>
-              <div>
+              <div class="staff">
                 <i class="fa-solid fa-user-gear fa-3x"></i>
                 <h3>1234</h3>
                 <p>Dedicated Staff</p>
                 <div class="line"></div>
               </div>
-              <div>
+              <div class="awards">
                 <i class="fa-solid fa-award fa-3x"></i>
                 <h3>1234</h3>
-                <p>Dedicated Staff</p>
+                <p>Awards received</p>
                 <div class="line"></div>
               </div>
             </div>
@@ -219,7 +219,7 @@
                 Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
                 sed stet lorem sit clita duo justo magna dolore erat amet
               </p>
-              <button class="btn-blue">Explore more</button>
+              <button class="btn btn-blue">Explore more</button>
             </div>
             <div class="cards">
               <div>
@@ -230,7 +230,7 @@
                     Clita erat ipsum et lorem et sit,sed stet lorem sit clita
                     duo justo erat amet
                   </p>
-                  <a href="#"
+                  <a href=""
                     >Read More<i class="fa-solid fa-arrow-right"></i
                   ></a>
                 </div>
@@ -241,7 +241,7 @@
                     Clita erat ipsum et lorem et sit,sed stet lorem sit clita
                     duo justo erat amet
                   </p>
-                  <a href="#"
+                  <a href=""
                     >Read More<i class="fa-solid fa-arrow-right"></i
                   ></a>
                 </div>
@@ -253,7 +253,7 @@
                   Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo
                   justo erat amet
                 </p>
-                <a href="#">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                <a href="">Read More<i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -261,10 +261,10 @@
         <section id="services" class="services">
           <button class="btn btn-white">Our Services</button>
           <h2>Awesome Financial Services For Business</h2>
-          <div>
+          <div class="services-content">
             <div class="services-list">
               <button class="active">
-                <div class="dropdownIcon">
+                <div class="service-tab">
                   <div></div>
                   <div></div>
                   <div></div>
@@ -272,7 +272,7 @@
                 <h4>Financial Planing</h4>
               </button>
               <button>
-                <div class="dropdownIcon">
+                <div class="service-tab">
                   <div></div>
                   <div></div>
                   <div></div>
@@ -280,7 +280,7 @@
                 <h4>Financial Planing</h4>
               </button>
               <button>
-                <div class="dropdownIcon">
+                <div class="service-tab">
                   <div></div>
                   <div></div>
                   <div></div>
@@ -288,7 +288,7 @@
                 <h4>Financial Planing</h4>
               </button>
               <button>
-                <div class="dropdownIcon">
+                <div class="service-tab">
                   <div></div>
                   <div></div>
                   <div></div>
@@ -299,9 +299,9 @@
             <img
               class="servicesImage"
               src="/assets/servicesImage.png"
-              alt="servicesImage"
+              alt="Services Image"
             />
-            <div class="experience">
+            <div class="services-experience">
               <h5>25 Years Of Experience In Financial Support</h5>
               <p>
                 Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
@@ -322,7 +322,7 @@
                   <p>Cash Advanced</p>
                 </div>
               </div>
-              <button class="btn-blue">Read More</button>
+              <button class="btn btn-blue">Read More</button>
             </div>
           </div>
         </section>
@@ -384,7 +384,7 @@
               placeholder="Message"
               required
             ></textarea>
-            <button class="btn-blue" type="submit">Submit now</button>
+            <button class="btn btn-blue" type="submit">Submit now</button>
           </form>
         </section>
       </main>
@@ -406,10 +406,10 @@
               <p>info@example.com</p>
             </div>
             <div class="footer-socials">
-              <a href="#"><i class="fa-brands fa-twitter"></i> </a>
-              <a href="#"><i class="fa-brands fa-youtube"></i> </a>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i> </a>
+              <a href=""><i class="fa-brands fa-twitter"></i> </a>
+              <a href=""><i class="fa-brands fa-youtube"></i> </a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i> </a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i> </a>
             </div>
           </div>
           <div class="footer-block">

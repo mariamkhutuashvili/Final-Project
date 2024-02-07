@@ -50,7 +50,7 @@
   transition: 0.3s;
 }
 
-.services-list button:hover .dropdownIcon div {
+.services-list button:hover .service-tab div {
   background: white;
   transition: 0.3s;
 }
@@ -61,18 +61,18 @@
   color: white;
 }
 
-.active .dropdownIcon div {
+.active .service-tab div {
   color: #355efc;
   background: white;
 }
 
-.dropdownIcon {
+.service-tab {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.dropdownIcon div {
+.service-tab div {
   height: 3px;
   width: 36px;
   background: #000;
@@ -82,12 +82,12 @@
   max-width: 347px;
 }
 
-.experience {
+.services-experience {
   max-width: 355px;
   width: 100%;
 }
 
-.experience h5 {
+.services-experience h5 {
   font-size: 28px;
   font-weight: 700;
   line-height: 34px;
@@ -95,27 +95,27 @@
   margin-bottom: 32px;
 }
 
-.experience p {
+.services-experience p {
   font-size: 16px;
   line-height: 24px;
   text-align: left;
   color: #555555;
 }
 
-.experience div {
+.services-experience div {
   display: flex;
   align-items: center;
   gap: 5px;
   margin-top: 10px;
 }
 
-.experience .checks {
+.services-experience .checks {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.experience i {
+.services-experience i {
   color: #355efc;
 }
 
