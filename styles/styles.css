@@ -23,10 +23,80 @@ html {
 }
 
 .wrapper {
+  min-width: 320px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
 }
 
 button {
   cursor: pointer;
+}
+
+.btn {
+  position: relative;
+  max-width: 100%;
+  height: 44px;
+  font-size: 16px;
+}
+
+.btn-white {
+  background: transparent;
+  padding: 10px 15px;
+  color: #355efc;
+  margin-bottom: 25px;
+  border: 1px solid #cad2fc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.36);
+}
+
+.btn-white:hover {
+  border: 1px solid #355efc;
+}
+
+.btn-white::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background: #355efc;
+  transition: width 0.3s linear, left 0.3s linear;
+  transform: translateX(-50%);
+}
+
+.btn-white:hover::after {
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-blue {
+  padding: 10px 25px;
+  font-weight: 700;
+  background: #355efc;
+  color: #f5f5f5;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
+
+.btn-blue::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background: #f5f5f5;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.btn-blue:hover::after {
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -1,0 +1,148 @@
+.choose-us > div:first-child {
+  width: 100%;
+  background: #355efc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.choose-us .statistics {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.choose-us .statistics > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.choose-us .statistics i {
+  color: white;
+}
+
+.choose-us .statistics h3 {
+  color: white;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.choose-us .statistics p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.line {
+  background: white;
+  height: 1px;
+  width: 68px;
+}
+
+.advantages {
+  margin-top: 47px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.advantages h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+  max-width: 540px;
+}
+
+.advantages > div > p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.cards > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 18px;
+  border-radius: 15px;
+}
+
+.cards .whiteCard {
+  border: 1px solid #909de2;
+}
+
+.cards .blueCard {
+  background: #355efc;
+  border: 1px solid #909de2;
+}
+
+.card h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+  max-width: 218px;
+}
+
+.card p {
+  max-width: 218px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whiteCard > i {
+  color: #355efc;
+}
+
+.whiteCard p {
+  color: #555555;
+}
+
+.whiteCard a {
+  color: #355efc;
+}
+
+.blueCard a,
+.blueCard > i,
+.blueCard h5,
+.blueCard p {
+  color: white;
+}
